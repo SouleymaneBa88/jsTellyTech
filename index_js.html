@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js les DOM</title>
+    <!-- <link rel="stylesheet" href="Style.css"> -->
+     <style>
+        /* .get{
+            color: white;
+        }
+        .get:hover{
+            color: blue;
+        } */
+         button{
+            border-radius: 15px;
+            background-color: green;
+            color: #fff;
+         }
+         p{
+            text-align: center;
+         }
+     </style>
+</head>
+<body>
+    <p>Ola! como està</p>
+    <button>button1</button>
+    <button>button2</button>
+   
+    <script>
+        let P = document.querySelector('p')
+
+        let Button = document.querySelectorAll('button')
+        Button[0].addEventListener('click', function(){
+            P.style.backgroundColor = "red";
+            P.style.width = "40%";
+            alert('do xool !');
+        }) 
+        Button[1].addEventListener('click', function(){
+            P.style.width = "40%";
+            P.style.backgroundColor = "yellow";
+            alert('do xool !');
+
+        }) 
+        
+
+
+
+        // let Div = document.createElement('div'); // crée une balise
+        // Div.textContent = "Alhamdoulilah every days!"
+        // document.body.appendChild(Div)
+        // Div.style.backgroundColor ="brown";
+        // Div.style.fontWeight ="bold";
+        // Div.style.textAlign ="center";
+        // Div.style.padding ="10px";
+        // // Div.style.justifyContent="center";
+
+        // let Button = document.createElement('button');
+        // document.body.appendChild(Button);
+        // Button.textContent="Cliquez pour modifier le text!"
+        // Button.style.margin="30px";
+        // Button.style.backgroundColor="blue";
+        // Button.style.borderRadius="15px";
+        // Button.style.color= "white"
+        // Button.addEventListener("click",function(){
+        //     Div.textContent = "Never give up , have patience!"
+        // }); // événement de click avec les fonctions (function() ou ()=>)
+        // Div.classList.add("get"); // ajouter une class
+    </script>
+</body> 
+</html> 

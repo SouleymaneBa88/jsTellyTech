@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+        .btn{
+            background-color: gray;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="title">SMS Ramadan Mubarack!</h1>
+    <p class="description">Je pars bientôt, prends soin de toi</p>
+    <button class="btn">Click...</button>
+    <button class="btn">Joins...</button>
+    <button class="btn">Suivants...</button>
+    <div class="container">
+        <p class="item">Moi, je serai là l'année prochaine InshaAllah! Rien ne te garantit que tu seras là.</p>
+        <p class="item">Le Seigneur que tu adores pendant le Ramadan est le même que pendant les autres mois... Alors continue tes efforts.</p>
+        <p class="item">Thank you! Que Dieu te guide...</p>
+    </div>
+    
+    <script>
+        let H1 = document.getElementById("title");
+        H1.style.color = "red";
+
+        let P = document.getElementsByTagName("p");
+        P[0].style.color = "black";
+        P[1].style.color = "black";
+        P[2].style.color = "black";
+
+        let buttons = document.getElementsByClassName("btn")
+        for(let i= 0; i < buttons.length ; i++){
+        buttons[i].style.backgroundColor = 'green';
+        buttons[i].style.boxShadow="10px 10px 20px"
+        // buttons[1].style.backgroundColor = 'red';
+        // buttons[2].style.backgroundColor = 'red';
+        }
+
+        let allButtons = document.querySelectorAll('.btn');
+        for(i = 0; i<allButtons.length; i++){
+        allButtons[i].style.border = '3px solid black';
+        // allButtons[1].style.border = '1px solid black';
+        // allButtons[2].style.border = '1px solid black';
+    } 
+ 
+        let div = document.querySelector('.container');
+        let PDiv = div.getElementsByTagName('p');
+        for (let i = 0; i < PDiv.length; i++) {
+            PDiv[i].textContent = 'Élément modifié!';
+    //     PDiv[1].textContent = 'Élément modifié';
+    //  PDiv[2].textContent = 'Élément modifié';
+            
+        }
+          
+        let firstButton = document.querySelector('.btn');
+        firstButton.textContent = 'Cliquez-moi !';
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<script>
+    /* exo4
+    let note1,note2,note3,moyenne;
+note1 =parseFloat(prompt("Veuillez donner un note/20"));
+note2 =parseFloat(prompt("Veuillez donner un deuxiéme note"));
+note3 =parseFloat(prompt("Veuillez donner troisiéme note"));
+moyenne = (note1 + note2 + note3)/ 3;
+if ((note1 >= 10 && note2 >= 10 && note3 >= 10) || moyenne >= 12) {
+    alert('Feliz! vous avez validé votre année');
+}else{
+    alert('Du courage vous avez échoué');
+}
+*/ 
+/* 
+let n;
+n = prompt("Veuillez donner un nombre /3 et positif");
+if (n % 3==0 && n > 0) {
+    alert('Le nombre est divisible par 3 et positif');
+} else if (n % 3==0 || n > 0) {
+    alert('Le nombre remplit une seule condition');
+}else{
+    alert('Le nombre ne remplit aucune condition');
+}
+*/
+
+// multiplication par 2
+//  let i;
+//  for (let i = 1; i <= 5; i++) {
+//      console.log(i*2)
+//  }
+
+
+// impairs
+// let i;
+// for (let i = 1; i <= 10; i+=2) {
+//     console.log(i)
+// }
+
+// nombre % 3 && NOMBRE % 5
+// let i;
+// for (let i = 1; i <= 20; i++) {
+//     if (i % 3== 0 && i % 5 ==0) {
+//         console.log(i)
+//     }
+// }
+
+// let p =1;
+// for (let i = 1; i <= 5; i++) {
+//     p *=i;
+   
+// } console.log("le produit final entre 1 et 5",p)
+   
+//      tableau
+//    les tris croissant
+// let nombres = [ 12,5,8,130,44,25,90,3];
+// nombres.sort((a,b) => a-b);
+// alert('ordre',nombres)
+
+// somme && moyens
+// let c = [ 1,5,6,8,20,25,30,85,88,99]
+// let somme = 0;
+// let moyens;
+// for (let i =0 ; i < c.length; i++) {
+//    somme += c[i];
+//     moyens = somme / 10;
+// }
+// console.log(somme)
+// console.log(moyens)
+
+//      pairs && impairs
+// let nombres = [ 12,5,8,130,44,25,90,3];
+// let nombresPairs=nombres.filter(nombres=> nombres % 2 ==0)
+// let nombresImpairs =nombres.filter(nombres=> nombres % 2 !==0)
+// console.log(nombresPairs)
+// console.log(nombresImpairs)
+
+//   verification 
+// let c = [ 1,5,6,8,20,25,30,85,88,99]
+// let somme = 0;
+// let moyens;
+// for (let i =0 ; i < c.length; i++) {
+//    somme += c[i];
+//     moyens = somme / 10;
+// }
+// console.log(somme)
+// console.log(moyens)
+
+
+
+// ordrons et calcul l nombr de lettre saisi
+// let stock = [ ]
+// for (let i = 0; i < 5; i++) {
+//     let user = prompt("Veuillez saisir votre nom")
+//     while (user.length > 3) {
+//         user = prompt(" Trop de nom!,Veuillez resaisir votre nom =< 3")
+//     }
+//     stock.push(user)
+//     stock.sort()
+//     console.log("les nom à ordre alphabétique:",stock.sort)
+//     console.log(stock)
+//     console.log("la longueur du nom:",user.length)
+    
+// }
+
+// gestion des notes etudiant
+
+
+ let notes =[5,10,15,18,16,14,20,2,9,12];
+ let valid = 0;
+ let max = notes[0];
+ let min = notes[0];
+ for (let i = 0; i < notes.length; i++) {
+     let notesEtudiant = notes[ i]
+         alert("notes de chaque etudiant" + (i + 1) + ":" + notesEtudiant)
+     if (notesEtudiant >= 10) {
+         valid++;
+     }
+       if (notesEtudiant >  max ) {
+         max = notesEtudiant;
+     }
+     if (notesEtudiant < min) {
+         min = notesEtudiant;
+     }
+ }
+ if ( valid >= 5) {
+     alert("Felicitation!,la majorité des étudiants ont validé.")
+ }
+ else{
+     alert("La majorité des étudiants n'ont pas validé.")
+ }
+  alert(notes)
+ alert("la note le plus élevé est :"+ max);
+ alert("La note la plus basse est : " + min);
+</script>
